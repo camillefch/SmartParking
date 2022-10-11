@@ -1,30 +1,16 @@
-package com.example.Parking_XML1;
+package com.example.Parking_Json;
 
-import java.io.File;
-
-
-
-import jakarta.xml.bind.JAXBContext;
-import jakarta.xml.bind.JAXBException;
-import jakarta.xml.bind.Marshaller;
+import java.io.IOException;
 
 /**
- * Hello world!
+ * THIS ISS FOR JSONNNNN
  *
  */
 public class App 
 {
-    public static void main( String[] args ) throws JAXBException
+    public static void main( String[] args ) throws IOException
     {
-    	Parking user= new Parking();
-        user.setLatitude(100);
-        user.setLongitude(100);
-        user.setNbSpots(50);
-        user.setSpotsavailable(20);
-        JAXBContext contextObj = JAXBContext.newInstance(Parking.class);  
-        Marshaller m= contextObj .createMarshaller();
-        m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);  
-        File file =new File("/home/hussein/Desktop/park.xml");
-        m.marshal(user, file);   
+       Parser parse =new Parser();
+       parse.run(null);
     }
 }
