@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8bf66625-2d1b-4483-a564-ec35a71a95d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/main/java/com/smartparking/server/ServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/main/java/com/smartparking/server/entity/MessageMqtt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/main/java/com/smartparking/server/entity/Parking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/main/java/com/smartparking/server/entity/Spot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/main/java/com/smartparking/server/service/Publisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/main/java/com/smartparking/server/service/SimpleMqttCallBack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/main/java/com/smartparking/server/service/Subscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/test/java/com/smartparking/broker/ServerApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../userapp/src/main/resources/templates/CheckParking.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../userapp/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smartParking/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smartParking/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smartParking/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smartParking/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smartParking/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smartParking/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smartParking/src/main/java/com/smartparking/broker/BrokerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smartParking/src/main/java/com/smartparking/broker/entity/Parking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smartParking/src/main/java/com/smartparking/broker/entity/Spot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smartParking/src/main/java/com/smartparking/broker/repository/JdbcParkingRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smartParking/src/main/java/com/smartparking/broker/repository/ParkingRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smartParking/src/main/java/com/smartparking/broker/sensors/ParkingTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smartParking/src/main/java/com/smartparking/broker/service/Publisher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smartParking/src/main/java/com/smartparking/broker/service/SimpleMqttCallBack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smartParking/src/main/java/com/smartparking/broker/service/Subscriber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smartParking/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smartParking/src/test/java/com/smartparking/broker/BrokerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../userapp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userapp/src/main/java/com/user/userapp/controller/ParkingsStatusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../userapp/src/main/java/com/user/userapp/controller/ParkingsStatusController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userapp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../userapp/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2G2K5RxJNVYoTRMOyqXnZgnMssR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "/home/camille/CSN/SmartParking/MockedDevices",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8bf66625-2d1b-4483-a564-ec35a71a95d7" name="Changes" comment="" />
+      <created>1665581054355</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665581054355</updated>
+      <workItem from="1665581055596" duration="194000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
