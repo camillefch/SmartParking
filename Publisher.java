@@ -13,7 +13,10 @@ public class Publisher {
 		 A.setLatitude(100);
 		 A.setNbSpots(100);
 		 A.setLongitude(100);
-		 A.setId(2);
+		 //this is to choose which parking 
+		 Random randID = new Random();
+		 int MyrandID= randID.nextInt(2);
+		 A.setId(MyrandID);
 		 Random randI = new Random();
 	        int myRandInt = randI.nextInt(100);
 	        A.setSpotsavailable(myRandInt);
