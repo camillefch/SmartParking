@@ -33,6 +33,12 @@ public class Publisher {
 			 client.disconnect(); 
 		 }
 		 else {
+			 MqttClient client1 = new MqttClient("tcp://localhost:1883", MqttClient.generateClientId());
+			 client1.connect();
+			 MqttMessage message1 = new MqttMessage();
+			 message1.setPayload("this is the parking with sensor".getBytes());
+			 client1.publish("iot_data", message1);
+			 client1.disconnect(); 
 			 System.out.println("This is not the parking 1");
 		 }
 		 
