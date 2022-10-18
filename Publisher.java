@@ -17,6 +17,7 @@ public class Publisher {
 		 Random randID = new Random();
 		 int MyrandID= randID.nextInt(2);
 		 A.setId(MyrandID);
+		 // this is to select the random available spots
 		 Random randI = new Random();
 	        int myRandInt = randI.nextInt(100);
 	        A.setSpotsavailable(myRandInt);
