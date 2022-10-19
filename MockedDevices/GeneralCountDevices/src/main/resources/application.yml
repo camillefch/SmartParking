@@ -1,0 +1,7 @@
+config:
+  port: 10000
+  deviceid: "0001"
+  maxcapacity: 200
+  topic : "/0001/NbVehicules"
+
+
