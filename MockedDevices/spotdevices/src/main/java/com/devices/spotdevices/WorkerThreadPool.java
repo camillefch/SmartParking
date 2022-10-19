@@ -1,6 +1,12 @@
 package com.devices.spotdevices;
 
-import com.sun.org.apache.xml.internal.utils.SystemIDResolver;
+
+import com.google.gson.Gson;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.HttpClientBuilder;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -8,7 +14,6 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 
 class Worker implements Runnable {
 
@@ -26,8 +31,8 @@ class Worker implements Runnable {
     public void run() {
         int randomIndex = random.nextInt(devices.size());
         try {
-            post(devices.get(randomIndex));
-        } catch (InterruptedException e) {
+            post2(devices.get(randomIndex));
+        } catch (InterruptedException | IOException e) {
             throw new RuntimeException(e);
         }
     }
@@ -56,13 +61,27 @@ class Worker implements Runnable {
         }
     }
 
+    public void post2(Device d) throws InterruptedException, IOException {
+        Thread.sleep(10000);
+        d.setStatus(random.nextInt(2));
+        String       postUrl       = "http://localhost:18080";
+        Gson         gson          = new Gson();
+        HttpClient   httpClient    = HttpClientBuilder.create().build();
+        HttpPost     post          = new HttpPost(postUrl);
+        StringEntity postingString = new StringEntity(gson.toJson(d));
+        post.setEntity(postingString);
+        post.setHeader("Content-type", "application/json");
+        HttpResponse  response = httpClient.execute(post);
+
+    }
+
 
     }
 
 
 public class WorkerThreadPool {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         List<Device> devices = new ArrayList<Device>();
         devices.add(new Device("1", "2.201584", "48.712560"));
         devices.add(new Device("2", "2.201600", "48.712643"));
@@ -72,8 +91,10 @@ public class WorkerThreadPool {
         ExecutorService executor = Executors.newFixedThreadPool(1);//two threads, try setting by 1 to observe time
         System.out.println("Starting ...");
         long start = System.currentTimeMillis();
-        Worker worker = new Worker(devices);
+
         while (true) {//worker.run is called 2 (threads started) times by two threads
+            Thread.sleep(10000);
+            Worker worker = new Worker(devices);
             executor.submit(worker);
         }
     }

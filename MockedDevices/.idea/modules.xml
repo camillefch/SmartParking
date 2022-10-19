@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/MockedDevices.iml" filepath="$PROJECT_DIR$/.idea/MockedDevices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GeneralCountDevices/GeneralCountDevices.iml" filepath="$PROJECT_DIR$/GeneralCountDevices/GeneralCountDevices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spotdevices/spotdevices.iml" filepath="$PROJECT_DIR$/spotdevices/spotdevices.iml" />
     </modules>
   </component>
 </project>
