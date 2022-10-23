@@ -6,7 +6,7 @@ public class Parking {
     private int latitude;
     private int nbSpots;
     private int spotsavailable;
-
+    public Parking() {}
     public Parking(int id, int longitude, int latitude, int nbSpots, int spotsavailable) {
         this.id = id;
         this.longitude = longitude;
@@ -27,7 +27,9 @@ public class Parking {
         return id;
     }
 
-
+    public void setId(int id) {
+        this.id=id;
+    }
     public int getLongitude() {
         return longitude;
     }
