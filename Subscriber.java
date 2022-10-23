@@ -15,6 +15,7 @@ public class Subscriber
     	client.subscribe("Palaiseau/Parking1/Barrier");
     	client.subscribe("Palaiseau/ParkingNumber2/Slot 3");
     	 System.out.println("Subs start");
+        //here we can know the status of all spots in parking2
     	 //for(int i=0;i<=10;i++) {
 //     	MqttClient client=new MqttClient("tcp://localhost:1883", MqttClient.generateClientId());
 //     	client.setCallback( new SimpleMqttCallBack() );
