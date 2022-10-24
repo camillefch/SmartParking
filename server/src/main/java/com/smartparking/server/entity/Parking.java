@@ -4,24 +4,18 @@ package com.smartparking.server.entity;
 
 public class Parking {
     private int id ;
-    private int longitude;
-    private int latitude;
+    private double longitude;
+    private double latitude;
     private int nbSpots;
 
 
-    public Parking(int id, int longitude, int latitude, int nbSpots, int spotsavailable) {
+    public Parking(int id, double longitude, double latitude, int nbSpots) {
         this.id = id;
         this.longitude = longitude;
         this.latitude = latitude;
         this.nbSpots = nbSpots;
     }
 
-    public Parking(int id, int longitude, int latitude, int nbSpots) {
-        this.id = id;
-        this.longitude = longitude;
-        this.latitude = latitude;
-        this.nbSpots = nbSpots;
-    }
 
     public int getId() {
         return id;

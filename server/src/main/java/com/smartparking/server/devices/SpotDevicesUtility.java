@@ -22,6 +22,8 @@ public class SpotDevicesUtility {
         System.out.println("post update");
         System.out.println(spotDevice.getId());
         System.out.println(spotDevice.getStatus());
+
+
         //TODO : Finding the right parking from the location
         String parkingId = "blue" ;
 
