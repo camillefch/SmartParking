@@ -19,17 +19,13 @@ public class SpotDevicesUtility {
     @ResponseBody
     public void updateStatus(@RequestBody SpotDevice spotDevice) throws MqttException {
 
-        System.out.println("post update");
-        System.out.println(spotDevice.getId());
-        System.out.println(spotDevice.getStatus());
-
-
         //TODO : Finding the right parking from the location
-        String parkingId = "blue" ;
+        String parkingId = "5" ;
 
         //Publish
         String topic = "Palaiseau/" + parkingId +"/" + spotDevice.getId() +"/status";
         publisher.publish(Integer.toString(spotDevice.getStatus()) , topic);
+        System.out.println("published in : " + topic );
 
 
     }

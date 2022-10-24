@@ -22,10 +22,9 @@ public class ServerApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws MqttException {
-
         log.info("StartApplication...");
         generalCountDeviceUtility = new GeneralCountDeviceUtility();
-        generalCountDeviceUtility.susbcribe("/0001/NbVehicules" , "tcp://localhost:10883");
+        generalCountDeviceUtility.subscribe("/0001/NbVehicules" , "tcp://localhost:1883");
 
     }
 

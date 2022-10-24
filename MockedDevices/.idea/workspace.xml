@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bf66625-2d1b-4483-a564-ec35a71a95d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../server/src/main/java/com/smartparking/server/devices/GeneralCountDeviceUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/main/resources/parkings.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneralCountDevices/src/main/java/com/devices/generalcountdevices/GeneralCountDeviceApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/GeneralCountDevices/src/main/java/com/devices/generalcountdevices/GeneralCountDeviceApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeneralCountDevices/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/GeneralCountDevices/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/smartparking/server/ServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/smartparking/server/ServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/smartparking/server/devices/SpotDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/smartparking/server/devices/SpotDevice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/smartparking/server/devices/SpotDevicesUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/smartparking/server/devices/SpotDevicesUtility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/smartparking/server/entity/Parking.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/smartparking/server/entity/Parking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/smartparking/server/service/SimpleMqttCallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/smartparking/server/service/SimpleMqttCallBack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/smartparking/server/service/Subscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/smartparking/server/service/Subscriber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../userapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../userapp/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../userapp/src/main/java/com/user/userapp/controller/ParkingsStatusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../userapp/src/main/java/com/user/userapp/controller/ParkingsStatusController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../userapp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../userapp/src/main/resources/application.properties" afterDir="false" />
@@ -62,7 +54,7 @@
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
     "jdk.selected.JAVA_MODULE": "18",
-    "last_opened_file_path": "/home/camille/CSN/SmartParking/MockedDevices/GeneralCountDevices",
+    "last_opened_file_path": "/home/camille/CSN/SmartParking/MockedDevices/spotdevices",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -113,6 +105,7 @@
       <workItem from="1665581055596" duration="194000" />
       <workItem from="1666182201529" duration="5531000" />
       <workItem from="1666521789970" duration="700000" />
+      <workItem from="1666607647737" duration="181000" />
     </task>
     <servers />
   </component>
