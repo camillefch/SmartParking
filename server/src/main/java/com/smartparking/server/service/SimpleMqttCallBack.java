@@ -7,7 +7,11 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
 
 public class SimpleMqttCallBack implements MqttCallback {
 
-        private MessageMqtt messageMqtt;
+    public MessageMqtt getMessageMqtt() {
+        return messageMqtt;
+    }
+
+    private MessageMqtt messageMqtt;
 
         public void connectionLost(Throwable cause) {
             // After the connection is lost, it usually reconnects here

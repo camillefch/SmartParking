@@ -23,7 +23,7 @@ public class ServerApplication implements CommandLineRunner {
     public void run(String... args) throws MqttException {
 
         log.info("StartApplication...");
-        publisher.publish("1", "sensors/topic");
+
     }
 
 

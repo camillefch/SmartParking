@@ -7,14 +7,13 @@ public class Parking {
     private int longitude;
     private int latitude;
     private int nbSpots;
-    private int spotsavailable;
+
 
     public Parking(int id, int longitude, int latitude, int nbSpots, int spotsavailable) {
         this.id = id;
         this.longitude = longitude;
         this.latitude = latitude;
         this.nbSpots = nbSpots;
-        this.spotsavailable = spotsavailable;
     }
 
     public Parking(int id, int longitude, int latitude, int nbSpots) {
@@ -22,7 +21,6 @@ public class Parking {
         this.longitude = longitude;
         this.latitude = latitude;
         this.nbSpots = nbSpots;
-        this.spotsavailable = 0;
     }
 
     public int getId() {
@@ -54,13 +52,6 @@ public class Parking {
         this.nbSpots = nbSpots;
     }
 
-    public int getSpotsavailable() {
-        return this.spotsavailable;
-    }
-
-    public void setSpotsavailable(int spotsavailable) {
-        this.spotsavailable = spotsavailable;
-    }
 
     @Override
     public String toString() {
@@ -69,7 +60,6 @@ public class Parking {
                 ", longitude=" + longitude +
                 ", latitude=" + latitude +
                 ", nbSpots=" + nbSpots +
-                ", spotsavailable=" + spotsavailable +
                 '}';
     }
 }

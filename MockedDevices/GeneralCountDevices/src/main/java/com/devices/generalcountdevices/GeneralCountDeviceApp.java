@@ -48,7 +48,7 @@ public class GeneralCountDeviceApp implements ApplicationRunner {
 
   //  System.out.println(deviceid);
             int nbVehicules = random.nextInt(appInfo.getMaxcapacity());
-            MqttClient client = new MqttClient("tcp://localhost:" + appInfo.getPort() , MqttClient.generateClientId());
+            MqttClient client = new MqttClient("http://localhost:" + appInfo.getPort() , MqttClient.generateClientId());
             client.connect();
             MqttMessage message = new MqttMessage();
             message.setPayload(Integer.toString(nbVehicules).getBytes());
